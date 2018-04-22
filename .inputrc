@@ -1,0 +1,13 @@
+$include /etc/inputrc
+set editing-mode vi
+$if mode=vi
+set keymap vi-command
+# these are for vi-command mode
+"v":abort
+
+
+set keymap vi-insert
+# these are for vi-insert mode
+"\C-h":"\C-?"
+$endif
+
