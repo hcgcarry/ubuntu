@@ -11,5 +11,8 @@ set keymap vi-insert
 "\C-k":backward-delete-char
 "\C-h":backward-char
 "\C-l":forward-char
+"\C-i":reverse-search-history
+"\C-y":forward-search-history
+
 $endif
 

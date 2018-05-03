@@ -116,3 +116,6 @@ if ! shopt -oq posix; then
 fi
 set -o vi
 stty -ixon
+export code='/media/dio/DATA/code'
+alias dc='xdg-open'
+export homework='/media/dio/DATA/homework'
