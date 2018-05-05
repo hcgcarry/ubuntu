@@ -3,3 +3,4 @@ ex:git remote add origin http://...
 git push <repository> <branch>
 ex:git push -u origin master
 git commit -a -m '{comment}'提交所有更改過的檔案
+git log --stat 觀察比較詳細的log
