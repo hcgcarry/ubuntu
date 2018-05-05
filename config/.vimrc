@@ -15,5 +15,7 @@ map <C-y> "+yy
 syntax on "語法上色
 map # {
 map @ }
-
+map! <C-k> 
+map! <C-h> OD
+map! <C-l> OC
 colorscheme kolor "擴充語法上色
