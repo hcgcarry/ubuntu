@@ -119,3 +119,5 @@ stty -ixon
 export code='/media/dio/DATA/code'
 alias dc='xdg-open'
 export homework='/media/dio/DATA/homework'
+export home='/home/dio/'
+export web='/var/www/html/'
