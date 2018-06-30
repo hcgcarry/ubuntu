@@ -3,13 +3,14 @@
 
 # Path to your oh-my-zsh installation.
   export ZSH=/home/dio/.oh-my-zsh
- #Powerline
-source /usr/share/powerline/bindings/bash/powerline.sh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bullet-train"
+
+ZSH_THEME="agnoster"
+
+#ZSH_THEME="bullet-train"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -94,6 +95,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+function kbdv(){
+	echo "hellw fjkdf";
+}
  export ANDROID_SDK_ROOT='~/android-sdk' 
 set -o vi
 stty -ixon
@@ -101,12 +105,20 @@ export code='/media/dio/DATA/code'
 alias dc='xdg-open'
 export homework='/media/dio/DATA/homework'
 export home='/home/dio/'
-export web='/var/www/html/'
+export w='/var/www/html/'
  #Powerline
- . /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
+# . /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
 
-bindkey '^h' backward-char
+#bindkey '^h' backward-char
 bindkey '^l' forward-char
 bindkey '^k' backward-delete-char
-bindkey '^r' history-incremental-search-forward
+#bindkey '^r' history-incremental-search-forward
 bindkey '^n' history-incremental-search-backward
+bindkey -s '^r' 'ls\n'
+alias lt='ls -lact'
+alias ll='ls -lct'
+. /usr/share/autojump/autojump.sh
+setopt no_nomatch
+source /usr/local/lib/z.sh
+alias us='setxkbmap us'
+alias dv='setxkbmap -layout us -variant dvp'

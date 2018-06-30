@@ -1,0 +1,8 @@
+intr = ^C (interupte)
+kill = ^U (刪除光標前面的字)
+eof = ^D (結束這個輸入流)
+rprnt = ^R(顯示之前輸入的指令)
+werase = ^W(刪除光標前面的單字)
+lnext = ^V(接下來輸入的組合鍵or其他奇奇怪怪的鍵會print初他們輸入進tty的字串)
+stty -a (顯示綁定的組合)
+

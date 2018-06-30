@@ -1,0 +1,11 @@
+git diff 察看有追蹤位標記和上次commit的差別
+git diff --cache 察看有追蹤有標記和上次commit的差別
+git show 察看patch更改的內容
+gitk --all 圖形化察看 再gitk裏面要更新的話按shift+F5
+git reset 還原目前add的東西
+git log --oneline 察看再remote上面對應的目前的分支的log
+#git push origin {branch name}
+git reset -- hard HEAD
+如果再轉換分支前修改過追蹤的檔案，且加入Index這個檔案改的內容和以追蹤會跟著過去。位追蹤且新創的也會
+跟著過去
+git merge {branch name}

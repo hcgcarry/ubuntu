@@ -1,0 +1,2 @@
+學完後記得回去學javascript的jsonp json php xml的東西
+要display_error 去php.ini裏面改 記得他裏面已經有了所以是要改重off改成on 然後 service apache2 restart

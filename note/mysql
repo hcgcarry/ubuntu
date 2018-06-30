@@ -1,0 +1,17 @@
+首先先移除 mysql：
+apt-get purge --auto-remove mysql-common mysql-server mariadb-server
+apt-get autoremove
+apt-get autoclean
+
+
+刪除設定檔
+rm -rf /etc/mysql rm -rf /var/lib/mysql
+
+killall -9 mysql (或 killall -9 mysqld) userdel mysql
+apt-get install --reinstall mysql-server
+
+echo "bind -v" > ~/.editrc 可以讓mysql使用readline
+
+{再編輯command line 得時候要小心 因為mysql 的 指令通常都是大寫的
+然後你進入vi mode時輸入的也是大寫的 所以無法正常使用功能
+記得轉成小寫!!}
