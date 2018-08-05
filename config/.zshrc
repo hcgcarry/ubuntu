@@ -101,9 +101,9 @@ function kbdv(){
  export ANDROID_SDK_ROOT='~/android-sdk' 
 set -o vi
 stty -ixon
-export code='/media/dio/DATA/code'
+export code='/win/code'
 alias dc='xdg-open'
-export homework='/media/dio/DATA/homework'
+export homework='/win/homework'
 export home='/home/dio/'
 export w='/var/www/html/'
  #Powerline
@@ -122,3 +122,4 @@ setopt no_nomatch
 source /usr/local/lib/z.sh
 alias us='setxkbmap us'
 alias dv='setxkbmap -layout us -variant dvp'
+alias telnet='rlwrap -a luit -encoding big5 telnet'

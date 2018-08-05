@@ -9,3 +9,4 @@ git reset -- hard HEAD
 如果再轉換分支前修改過追蹤的檔案，且加入Index這個檔案改的內容和以追蹤會跟著過去。位追蹤且新創的也會
 跟著過去
 git merge {branch name}
+git remote add origin 
