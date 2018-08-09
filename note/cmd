@@ -39,3 +39,5 @@ ls -ltc可以照著修改日期排序
 pkill -15 {程序名} 可以一次砍多個
 sudo -s 可以維持root
 setxkbmap -layout us -variant dvp
+#####search from current dir 
+grep -ril "{the text want to search}" ./ 
