@@ -95,10 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-function kbdv(){
-	echo "hellw fjkdf";
-}
- export ANDROID_SDK_ROOT='~/android-sdk' 
+export ANDROID_SDK_ROOT='~/android-sdk' 
 set -o vi
 stty -ixon
 export code='/win/code'
@@ -115,11 +112,30 @@ bindkey '^k' backward-delete-char
 #bindkey '^r' history-incremental-search-forward
 bindkey '^n' history-incremental-search-backward
 bindkey -s '^r' 'ls\n'
-alias lt='ls -lact'
-alias ll='ls -lct'
+#ls -lct 可以按造時間排列
+###-r reverse \ -X same type collect \ -t sort by time
+alias cdls='ls -ct --group-directories-first'
+alias ld='ls -lract --group-directories-first'
+alias lf='ls -lrct --group-directories-first'
 . /usr/share/autojump/autojump.sh
 setopt no_nomatch
 source /usr/local/lib/z.sh
-alias us='setxkbmap us'
-alias dv='setxkbmap -layout us -variant dvp'
 alias telnet='rlwrap -a luit -encoding big5 telnet'
+#change dir color
+eval $(dircolors -p | sed -e 's/DIR 01;34/DIR 01;33/' | dircolors /dev/stdin)
+
+function f() { 
+	if [ -n "$1" ];then
+		cd "$@" && lf
+	else
+		cdls
+	fi
+}
+
+function k() { 
+	if [ -n "$1" ];then
+		j "$@" && lf
+	else
+		cdls
+	fi
+}

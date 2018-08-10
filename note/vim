@@ -47,3 +47,4 @@ autoindent可以再特定的file下:setlocal noautoindent來取消
 set autoindent
 set textwidth=60
 set formatoptions+=m}
+:w!sudo tee% 可以強制存檔

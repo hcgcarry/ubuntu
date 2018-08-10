@@ -25,6 +25,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
+Plugin 'scrooloose/nerdtree' " 加入NERDTree
+Plugin 'w0rp/ale'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,6 +42,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+"
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0 
 set textwidth=200
@@ -58,8 +61,15 @@ set autoindent
 set t_Co=256
 hi LineNr cterm=bold ctermfg=DarkGrey ctermbg=NONE
 hi CursorLineNr cterm=bold ctermfg=Green ctermbg=NONE
-map FF :w<cr>
+
+map f :w<cr>
+map <C-i> <C-w><C-w>
 map <C-y> "+yy
+nmap <C-f> ZZ
+nmap <F3> gt
+nmap <F4> gT
+map <F2> :NERDTreeToggle<CR>
+map ; q:
 syntax on "語法上色
 "map! 可綁定insert mode and command line mode
 imap <C-k> 
@@ -71,5 +81,12 @@ colorscheme kolor "擴充語法上色
 "powerline
 set rtp+=/usr/local/lib/python2.7/dist-packages/bindlings/vim/
 set t_Co=256
-nmap <silent> <F4> :set invpaste<CR>:set paste?<CR>
-imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
+nmap <silent> <F8> :set invpaste<CR>:set paste?<CR>
+imap <silent> <F8> <ESC>:set invpaste<CR>:set paste?<CR>
+
+
+set cursorcolumn
+set cursorline
+highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=NONE
+highlight CursorColumn cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=NONE
+set modifiable
