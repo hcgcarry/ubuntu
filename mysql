@@ -1,0 +1,11 @@
+首先先移除 mysql：
+apt-get purge --auto-remove mysql-common mysql-server mariadb-server
+apt-get autoremove
+apt-get autoclean
+
+
+刪除設定檔
+rm -rf /etc/mysql rm -rf /var/lib/mysql
+
+killall -9 mysql (或 killall -9 mysqld) userdel mysql
+apt-get install --reinstall mysql-server

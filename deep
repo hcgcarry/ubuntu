@@ -1,0 +1,11 @@
+在卷积神经网络 Convolutional neural networks 的卷积层中, 推荐的激励函数是 relu. 
+在循环神经网络中 recurrent neural networks, 推荐的是 tanh 或者是 relu 
+使用bn可以不用再dropout or l2 regulization
+如果一個list夾雜的dimension 不一樣轉成np.array就會有問題
+normailztion or dropout 可能會讓network掛掉
+注意如果imshow忘記用cmap 揮度圖會看起來有顏色
+轉成np.array時如果長短不一會報錯(包誇多為的長短不一)(像是創見一個list 丟進去的每個相片各個為度的大小卻不同)
+
+使用for回圈如果遞迴的變數名用的一樣的話舊要小心了 一班的for可以正常使用是因為每次遞迴都會根據for後面的陣列復職不受下面的操作干擾
+但是如果是非for的操作曲直就可能會有問題
+resize image 還是用 PTL 的 image 比較好 
