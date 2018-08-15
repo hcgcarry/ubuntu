@@ -1,19 +1,17 @@
 func! myspacevim#before() abort
   "map
       imap jk jk
-      nmap ` \qr:
+      nmap <F4> \qr:
+      nmap ` :w<CR>
       nmap <F5> gt
       imap <F5> gt
       nmap <silent> <F12> :set invpaste<CR>:set paste?<CR>
       imap <silent> <F12> :set invpaste<CR>:set paste?<CR>
       set hlsearch
-
-      nmap <F8> :bn<CR>
-      imap <F8> :bn<CR>
-      
+      nmap <F6> :bn<CR>
+      imap <F6> :bn<CR>
   "set option
       set nohlsearch
-
       set laststatus=2
       set formatoptions+=m
       set nu

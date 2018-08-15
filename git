@@ -1,17 +1,26 @@
 git diff 察看有追蹤位標記和上次commit的差別
 git diff --cache 察看有追蹤有標記和上次commit的差別
-git show 察看patch更改的內容
+
+git show 察看commit更改的內容
 gitk --all 圖形化察看 再gitk裏面要更新的話按shift+F5
-git reset 還原目前add的東西
 git log --oneline 察看再remote上面對應的目前的分支的log
-#git push origin {branch name}
-git reset -- hard HEAD
+
 如果再轉換分支前修改過追蹤的檔案，且加入Index這個檔案改的內容和以追蹤會跟著過去。位追蹤且新創的也會
 跟著過去
 
+git rm *.sw? 可以刪除再這個目錄之下(包含遞迴)的.swp .swn ...之 類的
+
+git reset --hard HEAD~3 回到倒數第3個commit(hard工作資料夾裡面的也會背復元,mixed只有reposirity裡面的會背復元)
+
+''''
 git remote add <name> <url>
 ex:git remote add origin http://...
 git push <repository> <branch>
-ex:git push -u origin master
+ex:git push origin {branch name}
+
 git commit -a -m '{comment}'提交所有更改過的檔案
 git log --stat 觀察比較詳細的log
+
+"reset remote origin"
+git remote set-url origin https://
+'''
