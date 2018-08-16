@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 phpmyadmin
 .git 
 *.sw?
 .*.sw?
 __pycache__
 
+=======
+*.*.swp
+>>>>>>> 58b1fb8921e91b7fceb7128f9dafc1afe5e19fa3

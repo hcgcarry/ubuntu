@@ -1,7 +1,10 @@
 crtl+shift+c 複製
 crtl+shift+v 貼上
 crtl+s會鎖定command line 按crtl+q就會好了
-crtl-p 恢附上一個指令
+file -i {file}可以察看編碼屬性
+[ctrl]+a/[ctrl]+e	分別是讓游標移動到整個指令串的最前面
+/ 可以跳脫字元 如 /Enter 可以換行輸入指令
+echo $SHELL可以PRINT初當前用的SHELL
 
 locale察看系統編碼
 使用ctrl+h即可显示圖形模式的隱藏檔案

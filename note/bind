@@ -1,0 +1,31 @@
+
+
+直接在.bashrc裏面加入 set -o vi比較快拉(把bash的editor弄成vi模式)
+
+
+
+這個東西就是你輸入字元或字串(通過組合鍵)先會經過stty那關
+如果stty已經定義了這個字串的func則會執行
+(所以要更改已經背stty綁定的字串，就要先再bashrc裏面下命令讓他無效
+不然就會接著到bash的edit readline 
+這個程式會去讀取.inputrc這個檔案裏面定義的bind
+然後如果有找到func就會下達命令(注意這個命令式編輯CMD的字用的)
+
+\e or M :Esc or alt
+
+
+
+C-v可以再螢幕顯示出接下來按的那個鍵會給tty傳送的char sequence 
+如果是ctrl alt之類的則是按了之後在案
+隨便一個字符才會連帶著送出去
+
+
+func{
+
+
+
+
+
+
+
+

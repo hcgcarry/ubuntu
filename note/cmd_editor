@@ -1,0 +1,4 @@
+bash{
+stty會先吃輸入
+readline會去找~/.inputrc
+
