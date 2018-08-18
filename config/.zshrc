@@ -95,11 +95,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#export PATH=~/bin:$PATH 
+
 export ANDROID_SDK_ROOT='~/android-sdk' 
 set -o vi
 stty -ixon
 export code='/win/code'
-alias dc='xdg-open'
 export homework='/win/homework'
 export home='/home/dio/'
 export w='/var/www/html/'
@@ -114,6 +115,8 @@ bindkey '^n' history-incremental-search-backward
 bindkey -s '^r' 'ls\n'
 #ls -lct 可以按造時間排列
 ###-r reverse \ -X same type collect \ -t sort by time
+alias dc='xdg-open'
+alias vi='vim'
 alias cdls='ls -ct --group-directories-first'
 alias ld='ls -lract --group-directories-first'
 alias lf='ls -lrct --group-directories-first'

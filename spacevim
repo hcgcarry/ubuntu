@@ -10,3 +10,5 @@ install ctag to enable F2
 
 """"""""note
 spc + s 出現的視窗可以用ctrl + i切換過去"
+spc f f find file
+

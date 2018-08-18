@@ -13,9 +13,7 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    #colorscheme = "desert"
-    colorscheme = "gruvbox"
-    background = "dark"
+    colorscheme = "murphy"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
     enable_guicolors = true
@@ -29,6 +27,9 @@
     enable_vimfiler_gitstatus = true
     ###load my function
     bootstrap_before = "myspacevim#before"
+####nerdtree
+    filemanager = "nerdtree"
+    NERDTreeWinPos = "right"
 
 
 # enable denite search

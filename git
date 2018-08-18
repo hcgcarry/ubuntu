@@ -15,7 +15,7 @@ git log --stat 觀察比較詳細的log
 git diff 察看有追蹤位標記和上次commit的差別
 git diff --cache 察看有追蹤有標記和上次commit的差別
 git show 察看commit更改的內容
-gitk --all 圖形化察看 再gitk裏面要更新的話按shift+F5
+gitk  圖形化察看 再gitk裏面要更新的話按shift+F5
 git log --oneline 察看再remote上面對應的目前的分支的log
 
 
@@ -37,4 +37,4 @@ git remote set-url origin https://
 
 出現fatal: Couldn't find remote ref master                                              
 通常不是origin url打錯 而是你remote根本沒有東西 or 
-git push 的化可能是你local 根本沒有東西
+git push 的化可能是你local 根本沒有東西(還沒commit過(還沒commit過(還沒commit過)))
