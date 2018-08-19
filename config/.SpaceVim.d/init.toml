@@ -13,7 +13,7 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "murphy"
+    colorscheme = "SpaceVim"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
     enable_guicolors = true
@@ -30,6 +30,9 @@
 ####nerdtree
     filemanager = "nerdtree"
     NERDTreeWinPos = "right"
+###let g:spacevim_relativenumber = 0
+    relativenumber = 0
+####show mode
 
 
 # enable denite search
