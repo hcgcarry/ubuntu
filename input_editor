@@ -1,5 +1,0 @@
-vi 模式下的cmd編輯器可以直接下alt+l進入編輯模式
-alt默認情況下會是系統呼叫的東西 最好把他關掉因為按連續鍵的時候有可能會跑出來
-(字設)vim 的強制離開 :q!設成 normal mode 的qq
-如果是insert類似行四的通常會吃readline的.inputrc
-
