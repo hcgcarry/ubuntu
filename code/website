@@ -2,3 +2,12 @@
 php html or 一堆東西都丟到 var/www/html之下
 安裝phpmyadmin sudo ln -s /usr/share/phpmyadmin /var/www/html
 如果出現mbstring not found之類的 重啟apache
+
+
+使用前記得確認.htaccess (用來網址重導向的)
+還有composer.phar need install and dump
+
+include php 並不會讓request的網址改變 且可以想成就是在本葉面加載了一個script 所以變數式可以通用的
+header("Location:...") 會使得request的url改變 所以如果要儲存東西的話就要使用session or flash session
+include藥用相對路徑 因為絕對路徑式請求這個照片的檔案
+

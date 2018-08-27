@@ -22,14 +22,13 @@
     statusline_separator = "arrow"
     statusline_inactive_separator = "arrow"
     buffer_index_type = 4
-    enable_tabline_filetype_icon = true
 #enable_statusline_display_mode = false
     enable_vimfiler_gitstatus = true
     ###load my function
     bootstrap_before = "myspacevim#before"
 ####nerdtree
+    NERDTreeWinPos = "left"
     filemanager = "nerdtree"
-    NERDTreeWinPos = "right"
 ###let g:spacevim_relativenumber = 0
     relativenumber = 0
 ####show mode
@@ -49,6 +48,7 @@ auto-completion-tab-key-behavior = "smart"
 name = 'shell'
 default_position = 'top'
 default_height = 30
+
 
 #[[layers]]
 #name = "colorscheme"

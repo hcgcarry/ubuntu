@@ -8,6 +8,12 @@ git reset --hard HEAD~3 回到倒數第3個commit
 (hard工作資料夾裡面的也會背復元,mixed只有reposirity裡面的會背復元)
 }
 
+"""""""""""""""""""" stage all tracked file
+To stage your whole working tree:
+$ git add -u :/
+To stage just the current path:
+$ git add -u .
+"""
 git commit -a -m '{comment}'提交所有更改過的檔案
 
 """"""""""""""察看紀錄
@@ -32,8 +38,7 @@ ex:git push origin {branch name}
 "reset remote origin"
 git remote set-url origin https://
 
-""""""""""""""
-""""""""error
+"""""""""""""""error
 
 出現fatal: Couldn't find remote ref master                                              
 通常不是origin url打錯 而是你remote根本沒有東西 or 
