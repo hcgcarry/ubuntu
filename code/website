@@ -11,3 +11,6 @@ include php 並不會讓request的網址改變 且可以想成就是在本葉面
 header("Location:...") 會使得request的url改變 所以如果要儲存東西的話就要使用session or flash session
 include藥用相對路徑 因為絕對路徑式請求這個照片的檔案
 
+ctrl + F5 強制更新cache
+操作Mysql時當要再一個操作裏面有更新到兩個以上的table時就用trainscation
+

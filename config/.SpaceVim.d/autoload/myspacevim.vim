@@ -20,7 +20,6 @@ func! myspacevim#before() abort
       set shiftwidth=4
       set ruler
       set norelativenumber
-      set autoindent
       set cursorcolumn
       set laststatus=2
       set statusline+=%F
@@ -29,8 +28,23 @@ func! myspacevim#before() abort
       hi CursorLineNr cterm=bold ctermfg=Green ctermbg=NONE
       highlight CursorLine   cterm=NONE ctermbg=
       highlight CursorColumn cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=NONE
+  " autoindent
+      set autoindent
       set modifiable
 
+			" Called once right before you start selecting multiple cursors
+function! Multiple_cursors_before()
+  if exists(':NeoCompleteLock')==2
+    exe 'NeoCompleteLock'
+  endif
+endfunction
+
+" Called once only when the multiple selection is canceled (default <Esc>)
+function! Multiple_cursors_after()
+  if exists(':NeoCompleteUnlock')==2
+    exe 'NeoCompleteUnlock'
+  endif
+endfunction
 
 
 

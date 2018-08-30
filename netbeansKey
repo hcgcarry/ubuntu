@@ -1,0 +1,13 @@
+go to delca
+pasts history
+find text in project ctrl + shift + F
+replace text in project ctrl shift H
+jump to file in project alt shift o
+toogle bookmark m .
+previous bookmark m <
+next bookmark m >
+ctrl 2 open file tree
+paste history ctrl shift D
+toogle one line comment ctrl /
+find usage 
+
