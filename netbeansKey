@@ -1,22 +1,28 @@
-go to delcaration ctrl ]{ctrl j}
-go to previous window {ctrl k}
-select current buffer in file{ctrl i}
 
 find text in project ctrl + shift + F {alt o}
 replace text in project ctrl shift H {alt m}
 jump to file in project alt shift o {alt i}
 find usage {alt u}
-close window {alt ,}
-toogle bookmark m .
-previous bookmark m <
-next bookmark m >
-ctrl 2 open file tree <F2>
-focuse on editor <F3>
 paste history ctrl shift D {alt p}
+copy full path {alt shift l}
+go to previous window {alt j}
+go to next window {alt k}
+
+go to delcaration ctrl ]{ctrl ;}
+select current buffer in file{ctrl i}
+toogle bookmark m .{ctrl m}
+previous bookmark m <{ctrl ,}
+next bookmark m >{ctrl .}
 toogle one line comment ctrl /
-previous erro ctrl ,
-         copy full path {alt shift l}
-         open terminal in current path {alt shift k}
+clear document bookmark ctrl shift k
+bookmark previous history
+
+
+focuse on editor <F1>
+ctrl 2 open file tree <F2>
+bookmark<F3>
+terminal<F4>
+close <F5>
 
 
 

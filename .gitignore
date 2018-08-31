@@ -4,3 +4,6 @@ phpmyadmin
 .*.sw?
 __pycache__
 
+Config.php
+vendor/*
+MySQL.php

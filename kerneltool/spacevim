@@ -9,7 +9,16 @@ install ctag to enable F2
 """"""""""""""command
 
 """"""""note
-spc + s 出現的視窗可以用ctrl + i切換過去"
-spc f f find file
+spc f / find work in project
+spc j j find word in current screen
 
 spc b t show tree in current buffer
+spc p f find file in project
+spc f f find file in the directory of current buffer
+spc f v d open spacevim setting file
+\y copy to system clipboard
+ctrl c copy full path 
+
+<F3>nerd tree
+m see nerd tree menu
+? see nerd tree command
