@@ -14,6 +14,7 @@ toogle bookmark m .{ctrl m}
 previous bookmark m <{ctrl ,}
 next bookmark m >{ctrl .}
 toogle one line comment ctrl /
+lastest edit location {ctrl o}
 clear document bookmark ctrl shift k
 bookmark previous history
 

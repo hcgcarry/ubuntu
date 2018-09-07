@@ -3,7 +3,9 @@
 跟著過去
 git rm *.sw? 可以刪除再這個目錄之下(包含遞迴)的.swp .swn ...之 類的
 
+'''''''''''''''''''''reset 檔案之類的
 {
+git checkout HEAD -- {path/file}
 git reset --hard HEAD~3 回到倒數第3個commit
 (hard工作資料夾裡面的也會背復元,mixed只有reposirity裡面的會背復元)
 git reset 將add 的返回

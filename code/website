@@ -14,3 +14,4 @@ include藥用相對路徑 因為絕對路徑式請求這個照片的檔案
 ctrl + F5 強制更新cache
 操作Mysql時當要再一個操作裏面有更新到兩個以上的table時就用trainscation
 
+jquery .val 取的的事字串 不要把他當成數字了
