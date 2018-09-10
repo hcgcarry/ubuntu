@@ -15,3 +15,21 @@ ctrl + F5 強制更新cache
 操作Mysql時當要再一個操作裏面有更新到兩個以上的table時就用trainscation
 
 jquery .val 取的的事字串 不要把他當成數字了
+
+modify /etc/php/7.0/apache2/php.ini {
+display_error=On
+}
+
+In /etc/apache2/apache2.conf changed:
+<Directory /var/www/>
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+</Directory>
+to
+
+<Directory /var/www/>
+    Options Indexes FollowSymLinks
+    AllowOverride All
+    Require all granted
+</Directory>
