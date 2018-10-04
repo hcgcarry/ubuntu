@@ -1,0 +1,2 @@
+php artisan config:clear //clear the config cache
+php artisan serve // start laravel service

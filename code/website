@@ -33,3 +33,11 @@ to
     AllowOverride All
     Require all granted
 </Directory>
+
+///////////////////
+
+所以，如果要搭建一个高性能的PHP WEB服务器，
+目前最佳的方式是Apache/Nginx + FastCGI + PHP-FPM(+PHP-CGI)方式了，不要再使用 Module加载或者 CGI 方式啦：）
+
+ FastCGI 执行 PHP ，都建议用Non Thread Safe的 PHP
+////////////////////

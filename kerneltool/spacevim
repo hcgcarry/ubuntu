@@ -22,3 +22,7 @@ ctrl c copy full path
 <F3>nerd tree
 m see nerd tree menu
 ? see nerd tree command
+
+nvim with python3 support :{
+pip3 install --user neovim
+}
