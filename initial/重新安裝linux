@@ -1,0 +1,26 @@
+先到windows下面的磁碟管理將linux的那一塊給清除
+再用開機隨身碟將linux灌進去
+回到windows改開機路徑具體步驟如下
+{
+登錄Windows 8
+轉到桌面
+右擊開始按鈕，選擇管理員命令行
+輸入 mountvol g: /s (這將你的EFI目錄結構映射到G盤)
+輸入 cd g:\EFI
+當你輸入 dir 列出文件夾內容時，你可以看到一個Ubuntu的文件夾
+這裡的參數可以是grubx64.efi或者shimx64.efi
+運行下列命令將grub64.efi設置為啟動引導程序： bcdedit /set {bootmgr} path \EFI\ubuntu\grubx64.efi
+重啟你的電腦
+你將會看到一個包含Ubuntu和Windows選項的GRUB菜單
+如果你的電腦仍然直接啟動到Windows，重複步驟1到7，但是這次輸入： bcdedit /set {bootmgr} path \EFI\ubuntu\shimx64.efi
+重啟你的電腦
+
+
+原文網址：https://read01.com/Jx4j5R.html
+}
+
+這時就可以在開機選單選到linux了
+接著到Linux 用terminal
+將之前備份的解壓縮到/下面
+大功告成!!!!
+
