@@ -1,0 +1,16 @@
+I install it in anaconda:
+export cuda path:
+export CUDA_HOME="/usr/local/cuda-9.0"
+export PATH="/usr/local/cuda-9.0/bin${PATH:+:${PATH}}"
+export LD_LIBRARY_PATH="${CUDA_HOME}/lib64"
+
+''' not sure
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64/"
+'''
+install cuda 9.0
+install cudnn 7.0.5
+
+conda create -n py3.6 python=3.6
+. activate py3.6
+pip install --upgrade tensorflow-gpu==1.8.0

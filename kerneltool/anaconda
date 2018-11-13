@@ -1,0 +1,5 @@
+install:
+export PATH="$PATH:/home/dio/anaconda3/bin"
+#############################
+source activate tf
+deactivate

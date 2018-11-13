@@ -1,0 +1,8 @@
+when update pip chenge /usr/bin/pip to follow content:
+from pip import __main__
+if __name__ == '__main__':
+    sys.exit(__main__._main())
+
+pip show tensorflow
+pip uninstall tensorflow
+pip install tensorflow==1.8.0
