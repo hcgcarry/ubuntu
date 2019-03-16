@@ -34,6 +34,9 @@ need to pull from remote repository first to enable push
 
 git remote add <name> <url>
 ex:git remote add origin https://github.com/hcgcarry/ubuntu.git
+#remember that if you haven't commit it will tell we you can't find match repository
+git add *
+git commit -m 'fuck'
 git push <repository> <branch>
 ex:git push origin {branch name}
 

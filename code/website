@@ -1,4 +1,6 @@
 一些安裝本地伺服器的困難{
+apt-get install apache2
+apt-get install php7.0 libapache2-mod-php7.0
 php html or 一堆東西都丟到 var/www/html之下
 安裝phpmyadmin sudo ln -s /usr/share/phpmyadmin /var/www/html
 如果出現mbstring not found之類的 重啟apache

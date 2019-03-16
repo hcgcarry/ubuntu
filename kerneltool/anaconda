@@ -1,5 +1,8 @@
+when use anacoda's pip don't print sudo，it will jump to system default pip
 install:
 export PATH="$PATH:/home/dio/anaconda3/bin"
 #############################
 source activate tf
 deactivate
+source deactivate
+#########################

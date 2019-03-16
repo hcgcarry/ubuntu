@@ -6,3 +6,9 @@ if __name__ == '__main__':
 pip show tensorflow
 pip uninstall tensorflow
 pip install tensorflow==1.8.0
+
+
+install specified version:
+pip install git+git://github.com/nficano/pytube.git@master
+pip install git+git://github.com/nficano/pytube.git@eabbdc224b169d32b9876a7cd437079ef0d64b5c
+
