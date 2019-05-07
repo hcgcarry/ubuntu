@@ -4,6 +4,11 @@ apt-get autoremove
 apt-get autoclean
 
 
+open:
+mysql -u root -p <enter>
+
+
+
 刪除設定檔
 rm -rf /etc/mysql rm -rf /var/lib/mysql
 

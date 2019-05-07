@@ -9,6 +9,7 @@ php html or 一堆東西都丟到 var/www/html之下
 使用前記得確認.htaccess (用來網址重導向的)
 還有composer.phar need install and dump
 
+//code problem
 include php 並不會讓request的網址改變 且可以想成就是在本葉面加載了一個script 所以變數式可以通用的
 header("Location:...") 會使得request的url改變 所以如果要儲存東西的話就要使用session or flash session
 include藥用相對路徑 因為絕對路徑式請求這個照片的檔案
@@ -36,10 +37,3 @@ to
     Require all granted
 </Directory>
 
-///////////////////
-
-所以，如果要搭建一个高性能的PHP WEB服务器，
-目前最佳的方式是Apache/Nginx + FastCGI + PHP-FPM(+PHP-CGI)方式了，不要再使用 Module加载或者 CGI 方式啦：）
-
- FastCGI 执行 PHP ，都建议用Non Thread Safe的 PHP
-////////////////////
