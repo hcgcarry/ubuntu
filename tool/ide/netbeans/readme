@@ -1,0 +1,9 @@
+一個project只允許有一個main
+
+
+###############使用debug
+如果城市裏面有segement fault 則不管怎麼樣段點都會有segement fault
+藥用debug記得式按debug而不是run
+#######設置argv
+run > set project configuration > customize > run > Run command
+

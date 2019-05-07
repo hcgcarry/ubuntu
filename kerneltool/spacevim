@@ -7,9 +7,13 @@ install ctag to enable F2
 """""""'add layer
 
 """"""""""""""command
+:terminal 開啟終端機
+"""""""字定義的command
+F5 F6可以再tab煎來回switch (需要先進normal mode)
+
 
 """"""""note
-spc f / find work in project
+spc f / find word in project
 spc j j find word in current screen
 
 spc b t show tree in current buffer

@@ -1,0 +1,5 @@
+
+
+記得把launch.json 的program:改成要debug的file路徑
+F5可以開始debug
+

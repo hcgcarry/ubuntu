@@ -1,0 +1,3 @@
+tasks.json指令想式終端機要運行的命令 ex:make
+launch.json可以指定開始debug前要執行的task
+

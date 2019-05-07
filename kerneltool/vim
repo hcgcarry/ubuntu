@@ -1,6 +1,9 @@
+
+再vim裏面開啟terminal 要浸入terminal 的vim mode alt+< (需再normal mode下用)
+
+
 ggVGgq可以讓選取的範圍符合格式
 n可以重附上一個動作 常用的情況式/word收尋下一個字串
-:%s/./&/gn vim統計字數
 
 WW可以強制離開
 自訂CC可以存取
@@ -30,6 +33,7 @@ gq "应用到选中文本}
 
 
 
+:%s/the\>/fuck/g      \>式字尾的意思 \<式自首的意思
 :%s/.//gn vim統計字數
 
 

@@ -1,0 +1,1 @@
+cp ~/Pictures/* /win/linuxpictures
