@@ -23,7 +23,7 @@ spc f v d open spacevim setting file
 \y copy to system clipboard
 ctrl c copy full path 
 
-<F3>nerd tree
+<F3>nerd tree 該directory的選單
 m see nerd tree menu
 ? see nerd tree command
 

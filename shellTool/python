@@ -1,3 +1,0 @@
-regular的\跟python interpreter的功能重疊了
-所以需要先把他轉成row string讓他不被python interpreter翻譯
-而是讓regular使用其特殊功能
