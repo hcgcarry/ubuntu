@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 ###############################
 install neovim:
 sudo add-apt-repository ppa:neovim-ppa/unstable#if you try this command more than one time then it will throw error to get the key

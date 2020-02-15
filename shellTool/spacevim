@@ -1,0 +1,32 @@
+""""something need to check
+所有的 SpaceVim 选项可以使用 :h SpaceVim-config 来查看。选项名称未原先 Vim 脚本中使用的变量名称去处 g:spacevim_ 前缀。
+Bookmarks
+"""
+
+install ctag to enable F2
+"""""""'add layer
+
+""""""""""""""command
+:terminal 開啟終端機
+"""""""字定義的command
+F5 F6可以再tab煎來回switch (需要先進normal mode)
+
+
+""""""""note
+spc f / find word in project
+spc j j find word in current screen
+
+spc b t show tree in current buffer
+spc p f find file in project
+spc f f find file in the directory of current buffer
+spc f v d open spacevim setting file
+\y copy to system clipboard
+ctrl c copy full path 
+
+<F3>nerd tree
+m see nerd tree menu
+? see nerd tree command
+
+nvim with python3 support :{
+pip3 install --user neovim
+}

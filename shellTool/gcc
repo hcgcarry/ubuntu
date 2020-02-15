@@ -1,0 +1,13 @@
+gcc -o main main.c lib.c //將main.c lib.c 編譯並且link成main
+gcc -o main main.o lib.o //只執行link 所以要先有.o檔
+
+
+problem:
+使用pow(i,i)//如果是固定的直立如pow(2,3)就不會去callmath.h裡面的函數所以不會有編譯上的問題
+1.再code內要include <math.h>
+2.編譯的時候 gcc -c main.c
+3.再link的時候 gcc -o main main.c -lm
+  加-lm是為了讓gcc可以找到math的defined
+  而include 只是declaration
+  所以 -lm一定式加在要Link的那個指令上面
+  
