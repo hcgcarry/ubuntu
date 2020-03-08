@@ -1,3 +1,4 @@
+alt + < : enter shell gernal mode
 crtl+shift+c 複製
 crtl+shift+v 貼上
 crtl+s會鎖定command line 按crtl+q就會好了
