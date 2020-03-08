@@ -1,2 +1,0 @@
-ps -ef | grep {process properity}
-sudo kill -9 {pid}

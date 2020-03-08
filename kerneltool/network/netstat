@@ -1,6 +1,0 @@
-netstat -lx | grep mysql
-netstat -lt //find listening tcp
-netstat -lu //find listening udp
-netstat -ant //find close wait
-
-

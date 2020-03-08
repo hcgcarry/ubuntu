@@ -1,4 +1,0 @@
-check all /dev/ type size
-sudo fdisk -l 
-check all device UUID
-sudo blkid
