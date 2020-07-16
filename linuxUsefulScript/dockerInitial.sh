@@ -58,4 +58,4 @@ https://magiclen.org/gcin/
 ##################final manual operation
 cp  ../configFile/.* ~/
 cp -R ../configFile/.SpaceVim.d ~/
-####docker need to change .zshrc 
+echo "docker need to change .zshrc ,also find -name powerline.conf to find it and place it to .tmux.conf"
