@@ -95,14 +95,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export ANDROID_SDK_ROOT='~/android-sdk' 
 set -o vi
 stty -ixon
 export code='/win/code'
 alias dc='xdg-open'
-export homework='/win/homework'
-export home='/home/dio/'
-export w='/var/www/html/'
  #Powerline
 # . /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
 
@@ -121,8 +117,8 @@ alias lf='ls -lrct --group-directories-first'
 setopt no_nomatch
 #source /usr/local/lib/z.sh
 alias telnet='rlwrap -a luit -encoding big5 telnet'
-alias vi='nvim'
-alias vim='nvim'
+alias vi='vim'
+alias vim='vim'
 #change dir color
 eval $(dircolors -p | sed -e 's/DIR 01;34/DIR 01;35/' | dircolors /dev/stdin)
 
