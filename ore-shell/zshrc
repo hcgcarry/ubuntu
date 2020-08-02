@@ -132,4 +132,5 @@ set -o vi
 stty -ixon
 #############double click
 alias dc='xdg-open'
-
+bindkey '^n' history-incremental-search-backward
+. /usr/share/autojump/autojump.sh
