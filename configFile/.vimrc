@@ -43,3 +43,4 @@ set cursorline
 highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=NONE
 highlight CursorColumn cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=NONE
 set modifiable
+set clipboard=unnamedplus
